@@ -34,7 +34,7 @@ const Dashboard = () => {
     const fetchRoadmaps = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8000/api/roadmap/last-three/${userId}`
+          `https://collaborative-learning.onrender.com/api/roadmap/last-three/${userId}`
         );
         setCareerPaths(response.data);
       } catch (error) {

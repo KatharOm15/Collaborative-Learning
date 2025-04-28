@@ -13,7 +13,7 @@ const Home = () => {
     const fetchRoadmaps = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8000/api/roadmap/last-three/${userId}`
+          `https://collaborative-learning.onrender.com/api/roadmap/last-three/${userId}`
         );
         setRoadmaps(response.data);
         setError(false);

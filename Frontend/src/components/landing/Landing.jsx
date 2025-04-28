@@ -95,7 +95,7 @@ const FirstStepAI = () => {
       const userData = { ...tempUser, role };
 
       const response = await axios.post(
-        "http://localhost:8000/api/auth",
+        "https://collaborative-learning.onrender.com/api/auth",
         userData
       );
       const serverUser = response.data.user;

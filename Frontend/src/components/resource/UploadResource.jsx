@@ -34,7 +34,7 @@ const UploadResource = ({ podId, onUploadSuccess }) => {
 
     try {
       const response = await axios.post(
-        `http://localhost:8000/resource-share`,
+        `https://collaborative-learning.onrender.com/resource-share`,
         formData,
         {
           headers: {

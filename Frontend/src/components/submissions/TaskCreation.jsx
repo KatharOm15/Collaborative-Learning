@@ -17,7 +17,7 @@ function TaskCreation() {
 
   const createTask = async () => {
     try {
-      const response = await fetch("http://localhost:8000/tasks/create", {
+      const response = await fetch("https://collaborative-learning.onrender.com/tasks/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -44,7 +44,7 @@ function TaskCreation() {
     const fetchTasks = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8000/tasks/user/${localStorage.getItem("userIdd")}`
+          `https://collaborative-learning.onrender.com/tasks/user/${localStorage.getItem("userIdd")}`
         );
         console.log(response);
         setTasks(response.data); // Store the fetched tasks in state
